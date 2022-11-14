@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/nav_home_page">
+
+    <fragment
+        android:id="@+id/nav_home_page"
+        android:name="com.example.smallredbook.ui.fragment.HomePageFragment"
+        android:label="home_page"
+        tools:layout="@layout/fragment_home_page">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_look"
+        android:name="com.example.smallredbook.ui.fragment.LookFragment"
+        android:label="look"
+        tools:layout="@layout/fragment_look">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_message"
+        android:name="com.example.smallredbook.ui.fragment.MessageFragment"
+        android:label="message"
+        tools:layout="@layout/fragment_message">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_me"
+        android:name="com.example.smallredbook.ui.fragment.MeFragment"
+        android:label="fragment_me"
+        tools:layout="@layout/fragment_me" >
+
+    </fragment>
+
+
+</navigation>
