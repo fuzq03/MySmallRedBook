@@ -1,5 +1,6 @@
 package com.example.smallredbook.ui.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,9 +12,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.smallredbook.R;
 import com.example.smallredbook.adapter.HomePageViewPagerAdapter;
+import com.example.smallredbook.ui.activity.FragmentHomeLeft;
+import com.example.smallredbook.ui.activity.HomePageActivity;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -66,6 +71,15 @@ public class HomePageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_page, container, false);
+        View view = inflater.inflate(R.layout.fragment_home_page, container, false);
+        ImageButton button_left = view.findViewById(R.id.fragment_home_left_button);
+        button_left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), FragmentHomeLeft.class);
+                startActivity(intent);
+            }
+        });
+        return view;
     }
 }

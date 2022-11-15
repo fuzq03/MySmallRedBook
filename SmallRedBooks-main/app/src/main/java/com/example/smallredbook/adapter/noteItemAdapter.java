@@ -30,6 +30,7 @@ public class noteItemAdapter extends RecyclerView.Adapter<noteItemAdapter.noteIt
 
         if(position == 5){
             holder.notePicture.setImageResource(R.drawable.picture);
+            holder.noteTitle.setText("yeyeyeyyeyeyyeyeyeyeyyeyeyeyyeyyeyyyeyyyeyeeeyeyyyeyyyeyye");
         }
 
     }
@@ -40,11 +41,11 @@ public class noteItemAdapter extends RecyclerView.Adapter<noteItemAdapter.noteIt
     }
 
     class noteItemHolder extends RecyclerView.ViewHolder {
-    ImageView notePicture;
-    TextView noteTitle;
-    CircleImageView noteHeadProfile;
-    TextView noteId;
-    ImageView noteLike;
+        ImageView notePicture;
+        TextView noteTitle;
+        CircleImageView noteHeadProfile;
+        TextView noteId;
+        ImageView noteLike;
 
         public noteItemHolder(@NonNull View itemView) {
             super(itemView);

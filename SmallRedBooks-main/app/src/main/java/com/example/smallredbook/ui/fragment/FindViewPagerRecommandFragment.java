@@ -41,7 +41,7 @@ public class FindViewPagerRecommandFragment extends Fragment {
         Log.d("Here", "CreateRecycler1111111");
         View view = inflater.inflate(R.layout.fragment_find_view_pager_recommand, container, false);
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.find_view_pager_recommend_recycler);
-        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, LinearLayout.VERTICAL);
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
 
         recyclerView.setLayoutManager(staggeredGridLayoutManager);
         Log.d("Here", "CreateRecycler1111111");

@@ -42,11 +42,25 @@ public class FindFragment extends Fragment {
                     tab.setText("推荐");
                 }else if(position == 1){
                     tab.setText("购物");
+                }else if (position == 2){
+                    tab.setText("直播");
+                }else if (position == 3){
+                    tab.setText("穿搭");
+                }else if (position == 4){
+                    tab.setText("护肤");
+                }else if (position == 5){
+                    tab.setText("美食");
+                }else if (position == 6){
+                    tab.setText("彩妆");
+                }else if (position == 7){
+                    tab.setText("学习");
+                }else if (position == 8){
+                    tab.setText("职场");
+                }else if (position == 9){
+                    tab.setText("情感");
                 }
             }
         }).attach();
-
-
 
         return view;
     }

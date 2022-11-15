@@ -3,15 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.LookFragment"
     android:fitsSystemWindows="true"
-    android:background="@color/black">
+    tools:context=".ui.fragment.AddFragment">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="LookFragment"
-        android:textSize="60dp"
-        android:textColor="@color/white"/>
+        android:background="@drawable/nav_add_background"/>
 
 </FrameLayout>
