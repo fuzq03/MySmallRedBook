@@ -13,13 +13,10 @@
         app:tabGravity="center"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/find_view_pager"
-        app:tabSelectedTextColor="#383838"
+        app:tabSelectedTextColor="@color/teal_700"
         app:layout_constraintVertical_bias="0.2"
         app:tabIndicatorHeight="0dp"
-        app:tabBackground="@null"
-        app:tabRippleColor="@null"
-        app:tabMode="scrollable"
-        app:tabTextColor="#a5a5a5" />
+        app:tabTextColor="@color/purple_200" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/find_view_pager"

@@ -26,13 +26,12 @@ public class FindViewPagerAdapter extends FragmentStateAdapter {
             return FindViewPagerRecommandFragment.newInstance();
         }else if(position == 1){
             return FindViewPagerShoppingFragment.newInstance();
-        }else{
-            return FindViewPagerShoppingFragment.newInstance();
         }
+        return null;
     }
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 2;
     }
 }
